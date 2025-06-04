@@ -1,0 +1,95 @@
+﻿BEGIN;
+
+-- 20 rekordów do teams
+INSERT INTO public.teams (id, name, coach, budget, league) VALUES
+(1, 'Red Warriors', 'Jan Kowalski', 1500000.00, 'Ekstraklasa'),
+(2, 'Blue Tigers', 'Anna Nowak', 1200000.00, 'Ekstraklasa'),
+(3, 'Green Eagles', 'Piotr Zieliński', 1100000.00, 'I Liga'),
+(4, 'Yellow Lions', 'Marek Malinowski', 900000.00, 'I Liga'),
+(5, 'Black Panthers', 'Ewa Kaczmarek', 1300000.00, 'Ekstraklasa'),
+(6, 'White Wolves', 'Krzysztof Duda', 800000.00, 'II Liga'),
+(7, 'Silver Foxes', 'Robert Lis', 700000.00, 'II Liga'),
+(8, 'Golden Hawks', 'Agnieszka Wójcik', 1000000.00, 'I Liga'),
+(9, 'Orange Bulls', 'Tomasz Piotrowski', 850000.00, 'II Liga'),
+(10, 'Purple Sharks', 'Magdalena Krawczyk', 950000.00, 'I Liga'),
+(11, 'Brown Bears', 'Adam Sikora', 750000.00, 'II Liga'),
+(12, 'Gray Wolves', 'Joanna Nowicka', 670000.00, 'III Liga'),
+(13, 'Crimson Foxes', 'Michał Jabłoński', 600000.00, 'III Liga'),
+(14, 'Navy Dolphins', 'Natalia Król', 550000.00, 'III Liga'),
+(15, 'Teal Tigers', 'Łukasz Wrona', 580000.00, 'III Liga'),
+(16, 'Maroon Eagles', 'Karolina Kaczmarek', 720000.00, 'II Liga'),
+(17, 'Olive Lions', 'Szymon Wysocki', 640000.00, 'III Liga'),
+(18, 'Coral Panthers', 'Patryk Stępień', 690000.00, 'II Liga'),
+(19, 'Cyan Hawks', 'Dominika Bąk', 500000.00, 'III Liga'),
+(20, 'Magenta Bulls', 'Rafał Lisowski', 620000.00, 'III Liga');
+
+-- 20 rekordów do players
+INSERT INTO public.players (id, firstname, lastname, age, position, nationality, jerseynumber, teamid) VALUES
+(1, 'Jan', 'Nowak', 24, 'Forward', 'Poland', 9, 1),
+(2, 'Adam', 'Kowalski', 28, 'Midfielder', 'Poland', 10, 1),
+(3, 'Ewa', 'Wiśniewska', 22, 'Defender', 'Poland', 4, 2),
+(4, 'Piotr', 'Lewandowski', 30, 'Goalkeeper', 'Poland', 1, 2),
+(5, 'Katarzyna', 'Wójcik', 26, 'Forward', 'Poland', 11, 3),
+(6, 'Marek', 'Zieliński', 29, 'Midfielder', 'Poland', 8, 3),
+(7, 'Anna', 'Kaczmarek', 25, 'Defender', 'Poland', 5, 4),
+(8, 'Tomasz', 'Duda', 23, 'Forward', 'Poland', 7, 4),
+(9, 'Magdalena', 'Lis', 27, 'Midfielder', 'Poland', 6, 5),
+(10, 'Robert', 'Piotrowski', 31, 'Defender', 'Poland', 3, 5),
+(11, 'Joanna', 'Krawczyk', 24, 'Goalkeeper', 'Poland', 1, 6),
+(12, 'Michał', 'Sikora', 28, 'Forward', 'Poland', 9, 6),
+(13, 'Natalia', 'Nowicka', 22, 'Midfielder', 'Poland', 10, 7),
+(14, 'Łukasz', 'Jabłoński', 29, 'Defender', 'Poland', 4, 7),
+(15, 'Karolina', 'Król', 26, 'Forward', 'Poland', 11, 8),
+(16, 'Szymon', 'Wrona', 27, 'Midfielder', 'Poland', 8, 8),
+(17, 'Patryk', 'Bąk', 23, 'Defender', 'Poland', 5, 9),
+(18, 'Dominika', 'Stępień', 24, 'Forward', 'Poland', 7, 9),
+(19, 'Rafał', 'Lisowski', 30, 'Midfielder', 'Poland', 6, 10),
+(20, 'Anna', 'Kowalczyk', 28, 'Goalkeeper', 'Poland', 1, 10);
+
+-- 20 rekordów do playercontracts
+INSERT INTO public.playercontracts (id, playerid, startdate, enddate, salary) VALUES
+(1, 1, '2023-01-01', '2024-12-31', 50000.00),
+(2, 2, '2022-07-01', '2025-06-30', 55000.00),
+(3, 3, '2023-03-15', '2024-03-14', 48000.00),
+(4, 4, '2021-08-01', '2024-07-31', 52000.00),
+(5, 5, '2023-02-01', '2025-01-31', 47000.00),
+(6, 6, '2022-06-01', '2024-05-31', 53000.00),
+(7, 7, '2023-04-01', '2024-03-31', 46000.00),
+(8, 8, '2022-09-01', '2025-08-31', 54000.00),
+(9, 9, '2023-01-15', '2024-01-14', 49000.00),
+(10, 10, '2022-05-01', '2025-04-30', 51000.00),
+(11, 11, '2023-03-01', '2024-02-28', 45000.00),
+(12, 12, '2021-12-01', '2024-11-30', 52000.00),
+(13, 13, '2023-06-01', '2024-05-31', 47000.00),
+(14, 14, '2022-01-01', '2025-12-31', 53000.00),
+(15, 15, '2023-04-15', '2024-04-14', 46000.00),
+(16, 16, '2022-08-01', '2025-07-31', 54000.00),
+(17, 17, '2023-01-10', '2024-01-09', 49000.00),
+(18, 18, '2022-03-01', '2025-02-28', 51000.00),
+(19, 19, '2023-05-01', '2024-04-30', 48000.00),
+(20, 20, '2021-11-01', '2024-10-31', 52000.00);
+
+-- 20 rekordów do matches
+INSERT INTO public.matches (id, matchdate, hometeamid, awayteamid, stadium, result) VALUES
+(1, '2023-04-01', 1, 2, 'Stadion Narodowy', '2-1'),
+(2, '2023-04-02', 3, 4, 'Stadion Miejski', '1-1'),
+(3, '2023-04-03', 5, 6, 'Stadion Leśny', '3-0'),
+(4, '2023-04-04', 7, 8, 'Stadion Centralny', '0-2'),
+(5, '2023-04-05', 9, 10, 'Stadion Północny', '1-3'),
+(6, '2023-04-06', 11, 12, 'Stadion Południowy', '2-2'),
+(7, '2023-04-07', 13, 14, 'Stadion Zachodni', '0-1'),
+(8, '2023-04-08', 15, 16, 'Stadion Wschodni', '4-0'),
+(9, '2023-04-09', 17, 18, 'Stadion Centralny', '1-0'),
+(10, '2023-04-10', 19, 20, 'Stadion Narodowy', '0-0'),
+(11, '2023-04-11', 2, 3, 'Stadion Miejski', '2-2'),
+(12, '2023-04-12', 4, 5, 'Stadion Leśny', '1-0'),
+(13, '2023-04-13', 6, 7, 'Stadion Północny', '3-3'),
+(14, '2023-04-14', 8, 9, 'Stadion Południowy', '0-1'),
+(15, '2023-04-15', 10, 11, 'Stadion Zachodni', '2-0'),
+(16, '2023-04-16', 12, 13, 'Stadion Wschodni', '1-1'),
+(17, '2023-04-17', 14, 15, 'Stadion Centralny', '0-4'),
+(18, '2023-04-18', 16, 17, 'Stadion Narodowy', '2-2'),
+(19, '2023-04-19', 18, 19, 'Stadion Miejski', '3-1'),
+(20, '2023-04-20', 20, 1, 'Stadion Leśny', '1-2');
+
+COMMIT;
