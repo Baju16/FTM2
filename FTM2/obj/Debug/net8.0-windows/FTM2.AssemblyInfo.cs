@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FTM2")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec7f1a4b0c3ac8b8565f8e1433800b183b09765b")]
 [assembly: System.Reflection.AssemblyProductAttribute("FTM2")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FTM2")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

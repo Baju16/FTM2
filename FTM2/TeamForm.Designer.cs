@@ -59,7 +59,7 @@
             tabPageTeam.Padding = new Padding(3);
             tabPageTeam.Size = new Size(1289, 533);
             tabPageTeam.TabIndex = 0;
-            tabPageTeam.Text = "Team";
+            tabPageTeam.Text = "Players";
             // 
             // tableLayoutPanel1
             // 
@@ -300,8 +300,9 @@
             tabPage1.Padding = new Padding(3);
             tabPage1.Size = new Size(1289, 533);
             tabPage1.TabIndex = 2;
-            tabPage1.Text = "FindPlayers";
+            tabPage1.Text = "Teams";
             tabPage1.UseVisualStyleBackColor = true;
+            tabPage1.Click += tabPage1_Click;
             // 
             // tabPage2
             // 

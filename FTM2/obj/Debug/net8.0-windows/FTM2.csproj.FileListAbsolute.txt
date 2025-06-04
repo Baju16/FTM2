@@ -49,3 +49,4 @@ C:\Users\Dawid\source\repos\FTM2\FTM2\obj\Debug\net8.0-windows\FTM2.Forms.addpla
 C:\Users\Dawid\source\repos\FTM2\FTM2\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\Dawid\source\repos\FTM2\FTM2\obj\Debug\net8.0-windows\FTM2.Forms.addcontractForm.resources
 C:\Users\Dawid\source\repos\FTM2\FTM2\obj\Debug\net8.0-windows\FTM2.Forms.addteamForm.resources
+C:\Users\Dawid\source\repos\FTM2\FTM2\obj\Debug\net8.0-windows\FTM2.sourcelink.json
